@@ -21,16 +21,16 @@
 </template>
 <script setup>
 import AppLayout from '@/Layouts/AppLayout.vue';
-import Store from './Store.vue';
+
 import SearchBar from '@/Components/SearchBar.vue';
 import CardPost from '@/Components/CardPost.vue';
-import { ref, onMounted } from 'vue';
+import { ref} from 'vue';
 
 const posts1 = ref([]);
 const props =defineProps({
   posts: Array
 });
-console.log(props.posts[0].id);
+
 
 const posteos = [
     {

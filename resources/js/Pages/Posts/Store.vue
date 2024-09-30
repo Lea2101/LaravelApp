@@ -72,6 +72,7 @@ const createPost = () => {
    
     setTimeout(() => {
       closeModal();
+      inertia.visit('/posts');
     }, 2000);
   })
   .catch(error => {

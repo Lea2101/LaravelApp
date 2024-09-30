@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-sm h-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col">
     <a :href="`/post/${post.id}`" class="h-48"> 
-      <img class="w-full h-full object-cover rounded-t-lg" :src="`/storage/${post.img_url}`" alt="Imagen del post" />
+      <img class="w-full h-full object-cover rounded-t-lg" :src="post.img_url" alt="Imagen del post" />
     </a>
     <div class="p-5 flex flex-col justify-between flex-grow"> 
       <div>
